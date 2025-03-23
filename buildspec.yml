@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - pip install boto3 sagemaker
+  build:
+    commands:
+      - python scripts/start_training_job.py
